@@ -21,4 +21,4 @@ Route::get('/', function () {
 //課題4
 Route::get('admin/profile/create','ProfileController@add');
 
-Route::get('admin/profile/edit','ProfileController@add');
+Route::get('admin/profile/edit','ProfileController@edit');
