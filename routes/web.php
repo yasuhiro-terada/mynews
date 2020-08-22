@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+//課題3 コメントのみ記載いたします。
+// Route::get('XXX', 'AAA\Controller@bbb')
+
+//課題4
+Route::get('admin/profile/create','ProfileController@add');
+
+Route::get('admin/profile/edit','ProfileController@add');
