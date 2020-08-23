@@ -1,29 +1,17 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Mynews</title>
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <div class="header-logo"></div>
-                <div class="header-list"></div>
+{{-- layouts/profile.blade.phpを読み込む --}}
+@extends('layouts.profile')
+
+
+{{-- proflile.blade.phpの@yield('title')に'プロフィール新規作成'を埋め込む --}}
+@section('title','プロフィールの新規作成')
+
+{{-- profile.blade.phpの@yield('content')に以下のタグを読み込む --}}
+@section ('content')
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <h2>プロフィールの新規作成</h2>
             </div>
-        </header>
-        <main>
-            <div class="container">
-                <div class="top-message"></div>
-                <div class="contents"></div>
-                    <p>aaaaaaa</p>
-                    <p>bbbbbbb</p>
-                    <p>ccccccc</p>
-            </div>
-        </main>
-        <footer>
-            <div class ="container"></div>
-                <div class ="footer-logo"></div>
-                <p class="footer-message"></p>
-        </footer>
-    </body>
-</html>
+        </div>
+    </div>
+＠endsection
